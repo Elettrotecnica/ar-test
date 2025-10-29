@@ -28,14 +28,14 @@
       <!-- <a-box id="object1" position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box> -->
       <a-sphere id="object2" position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
       <a-sky color="#ECECEC" hide-on-enter-ar></a-sky>
-      <script>
-	let target = '#object1';
-	const scene = document.querySelector('a-scene');
-	scene.addEventListener('ar-hit-test-select', (e) => {
-	    target = target === '#object1' ? '#object2' : '#object1';
-	    scene.setAttribute('ar-hit-test', 'target', target);
-	});
-      </script>
+      <!-- <script> -->
+      <!-- 	let target = '#object1'; -->
+      <!-- 	const scene = document.querySelector('a-scene'); -->
+      <!-- 	scene.addEventListener('ar-hit-test-select', (e) => { -->
+      <!-- 	    target = target === '#object1' ? '#object2' : '#object1'; -->
+      <!-- 	    scene.setAttribute('ar-hit-test', 'target', target); -->
+      <!-- 	}); -->
+      <!-- </script> -->
     </a-scene>
   </body>
 </html>
